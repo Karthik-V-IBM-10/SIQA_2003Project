@@ -20,6 +20,7 @@ packages:
   gitUsername: prabhakarsag
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
@@ -30,6 +31,8 @@ services:
   - name: SIQA_2003Project
     version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
@@ -51,6 +54,8 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
@@ -71,6 +76,8 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
@@ -85,3 +92,21 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2043
+- serviceName: project.siqa_2003.integrations:tppdaf
+  packages:
+  - name: SIQA_2003Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
